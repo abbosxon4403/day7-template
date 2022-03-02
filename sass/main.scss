@@ -1,21 +1,62 @@
 @import "./variables";
 @import "./general";
 @import "./blocks/blocks";
-h1 {
-    color: aqua;
+.div {
+    width: 400px;
+    height: 400px;
+    background-color: #000000;
+    margin: 0 auto;
+    margin: 50px auto;
+    border: 10px solid #76a713;
+    &:hover {
+        transform: rotate(360deg);
+        transition: all 60s ease;
+    }
+}
+
+input {
+    transform: translateX(40%) translateY(170px);
+    width: 480px;
+    border: transparent;
+    background-color: transparent;
+}
+
+@media only screen and (max-width: 1400px) {
+    .div {
+        background-color: yellowgreen;
+        font-family: monospace;
+        border-radius: 25%;
+        text-align: center;
+    }
 }
 
 // Desktop
 @media only screen and (max-width: 1200px) {
-    .body {
+    .div {
         background-color: aqua;
         font-family: serif;
+        border-radius: 50%;
+        text-align: center;
     }
 }
 
-@media only screen and (max-width: 1400px) {
-    .body {
-        background-color: yellowgreen;
-        font-family: monospace;
-    }
+// H2 section started
+.h2-section {
+    display: flex;
+}
+
+.t12 {
+    transform: translateX(480px) translateY(70px);
+}
+
+.t3 {
+    transform: translateX(670px) translateY(270px);
+}
+
+.t6 {
+    transform: translateX(410px) translateY(520px);
+}
+
+.t9 {
+    transform: translateX(150px) translateY(270px);
 }
