@@ -1,0 +1,21 @@
+@import "./variables";
+@import "./general";
+@import "./blocks/blocks";
+h1 {
+    color: aqua;
+}
+
+// Desktop
+@media only screen and (max-width: 1200px) {
+    .body {
+        background-color: aqua;
+        font-family: serif;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .body {
+        background-color: yellowgreen;
+        font-family: monospace;
+    }
+}
